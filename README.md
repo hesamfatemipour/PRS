@@ -1,2 +1,2 @@
 # PRS
-Product Readis Search
+Product Redis Search
