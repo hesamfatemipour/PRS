@@ -1,9 +1,6 @@
 package main
 
-type Config struct {
-	Debug     bool
-	RedisAddr string
-	RedisPort string
-	RedisPass string
-	RedisDB   int
-}
+var Debug bool = true
+var RedisAddr string = "localhost:6379"
+var RedisPass string
+var RedisDB int = 1
