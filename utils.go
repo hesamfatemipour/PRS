@@ -12,4 +12,5 @@ func generateDocumentResponse(documents []redisearch.Document) map[string]interf
 		response["id"] = document.Id
 		response["data"] = document.Payload
 	}
+	return response
 }
