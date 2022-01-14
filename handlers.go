@@ -41,7 +41,7 @@ func DeleteProduct(c *gin.Context) {
 }
 
 func SearchProducts(c *gin.Context) {
-	// retrieve data from redis by title
-	name := c.Param("tile")
-	c.JSON(http.StatusOK, response(200, name))
+	title := c.Param("title")
+	docs, _ := SearchRedis(title)
+	c.JSON(http.StatusOK, generateDocumentResponse(docs))
 }
